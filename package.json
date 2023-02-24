@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "name": "kohana",
+  "version": "1.0.0",
+  "description": "Node.js MVC structure base on Kohana Framework, \r With ORM using better-sqlite3",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules ../../node_modules/jest/bin/jest.js --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kohanajs/KohanaJS.git"
+  },
+  "author": "Kojin Nakana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kohanajs/KohanaJS/issues"
+  },
+  "homepage": "https://github.com/kohanajs/KohanaJS#readme",
+  "dependencies": {
+    "mime": "^3.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": ["js", "jsx", "ts", "tsx", "mjs", "json"],
+    "transform": {}
+  }
+}

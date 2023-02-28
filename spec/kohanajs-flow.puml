@@ -1,0 +1,15 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName "Barlow Condensed Semibold"
+skinparam defaultFontSize 16
+
+start
+:init();
+fork
+:bootstrap.mjs
+define modules;
+forkend
+end
+
+@enduml

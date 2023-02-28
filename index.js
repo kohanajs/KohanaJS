@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright (c) 2020 Kojin Nakana
+Copyright (c) 2023 Kojin Nakana
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,18 +22,23 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
-import KohanaJS from './KohanaJS';
+import KohanaJS from './classes/KohanaJS';
+import ORM from './classes/ORM';
+import ORMAdapter from './classes/ORMAdapter';
+import DatabaseDriver from "./classes/DatabaseDriver";
+import ControllerMixinMime from './classes/controller-mixin/Mime';
+import ControllerMixinView from './classes/controller-mixin/View';
+import ControllerMixinDatabase from './classes/controller-mixin/Database';
 
 module.exports = {
   KohanaJS,
   addNodeModule: KohanaJS.addNodeModule,
   init: KohanaJS.init,
 
-  ORM: require('./classes/ORM'),
-  ORMAdapter: require('./classes/ORMAdapter'),
-  DatabaseDriver: require('./classes/DatabaseDriver'),
-
-  ControllerMixinMime: require('./classes/controller-mixin/Mime'),
-  ControllerMixinView: require('./classes/controller-mixin/View'),
-  ControllerMixinDatabase: require('./classes/controller-mixin/Database'),
+  ORM,
+  ORMAdapter,
+  DatabaseDriver,
+  ControllerMixinMime,
+  ControllerMixinView,
+  ControllerMixinDatabase,
 };

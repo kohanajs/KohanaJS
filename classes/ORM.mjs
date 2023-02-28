@@ -23,7 +23,7 @@ SOFTWARE.
 
  */
 import { Model } from '@kohana/mvc';
-import KohanaJS from '../KohanaJS';
+import { KohanaJS } from './KohanaJS';
 import ORMAdapter from './ORMAdapter';
 
 class ORM extends Model {

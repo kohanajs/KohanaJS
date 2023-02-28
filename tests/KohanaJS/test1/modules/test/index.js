@@ -1,2 +1,2 @@
-const KOJS = require('KOJSmvc');
-KOJS.addNodeModules(require.resolve('./'));
+import KohanaJS from '../../../../../classes/KohanaJS';
+KohanaJS.addNodeModule(import.meta.url);

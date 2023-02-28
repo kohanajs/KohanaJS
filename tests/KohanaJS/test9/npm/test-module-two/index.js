@@ -1,2 +1,2 @@
-const KohanaJS = require('../../../../../KohanaJS');
-KohanaJS.addNodeModule(__dirname);
+import { KohanaJS } from '../../../../../classes/KohanaJS.mjs';
+KohanaJS.addNodeModule(import.meta.url);

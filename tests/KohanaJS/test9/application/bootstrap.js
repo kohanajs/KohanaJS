@@ -1,7 +1,7 @@
-module.exports = {
+import test from '../../test5/npm/test';
+import test2 from '../npm/test-module-two';
+
+export default {
   modules: [
   ]
-};
-
-require('../npm/test-module-two');
-require('../../test5/npm/test');
+}

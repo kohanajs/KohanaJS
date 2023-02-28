@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "kohana",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js MVC structure base on Kohana Framework, \r With ORM using better-sqlite3",
   "main": "index.js",
   "directories": {
@@ -24,7 +24,14 @@
     "mime": "^3.0.0"
   },
   "jest": {
-    "moduleFileExtensions": ["js", "jsx", "ts", "tsx", "mjs", "json"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "ts",
+      "tsx",
+      "mjs",
+      "json"
+    ],
     "transform": {}
   }
 }
